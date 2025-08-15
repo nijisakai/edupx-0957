@@ -5,7 +5,17 @@ const config: CapacitorConfig = {
   appName: 'EduPX',
   webDir: 'dist',
   server: {
-    androidScheme: 'https'
+    androidScheme: 'https',
+    allowNavigation: [
+      'dify.playwithiai.com',
+      '101.201.45.187',
+      'playwithiai.com'
+    ]
+  },
+  plugins: {
+    CapacitorHttp: {
+      enabled: true
+    }
   }
 };
 

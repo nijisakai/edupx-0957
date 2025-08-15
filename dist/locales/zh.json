@@ -1,5 +1,11 @@
 {
   "common.back": "返回",
+  "common.loading": "加载中...",
+  "common.retry": "重试",
+
+  "error.loadFailed": "加载失败",
+  "error.networkIssue": "无法连接到服务。请检查您的网络连接并重试。",
+  "error.offline": "您当前处于离线状态。请检查您的网络连接。",
 
   "login.title": "欢迎来到 EduPX",
   "login.slogan": "人工智能驱动的政策与教育智能",

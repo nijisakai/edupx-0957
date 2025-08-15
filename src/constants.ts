@@ -1,7 +1,7 @@
 import type { AppInfo } from './types';
 import { BriefcaseIcon, GlobeAltIcon, DocumentTextIcon, QuestionMarkCircleIcon, ChartBarIcon } from './components/Icons';
 
-export const DIFY_BASE_URL = 'https://101.201.45.187/v1';
+export const DIFY_BASE_URL = 'https://dify.playwithai.com/v1';
 
 export const APPS: AppInfo[] = [
   {
