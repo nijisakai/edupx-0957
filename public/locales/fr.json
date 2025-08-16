@@ -62,5 +62,13 @@
   "docs.tocTitle": "Contenu",
   "docs.overview.title": "1. Aperçu d'EduPX",
   "docs.applications.title": "Applications",
-  "docs.faqs.title": "2. FAQ"
+  "docs.faqs.title": "2. FAQ",
+  "docs.targetUser.title": "Utilisateur Cible",
+  "docs.keyAdvantages.title": "Avantages Clés",
+  "docs.model.title": "Modèle",
+  "docs.tutorial.title": "Tutoriel",
+  "docs.usagePolicy.title": "Politique d'Utilisation",
+  "docs.backToTop": "Retour au Haut",
+  "docs.loading": "Chargement de la documentation...",
+  "docs.error": "Échec du chargement de la documentation"
 }

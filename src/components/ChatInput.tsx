@@ -72,20 +72,20 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSend, disabled }) => {
   }
 
   return (
-    <div className="p-2 border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
+    <div className="p-6 bg-white dark:bg-slate-900 ios-safe-left ios-safe-right">
       {previewImage && (
-        <div className="relative w-24 h-24 mb-2 ml-12 rounded-md overflow-hidden">
+        <div className="relative w-24 h-24 mb-4 ml-12 rounded-2xl overflow-hidden shadow-lg">
             <img src={previewImage} alt="Preview" className="w-full h-full object-cover" />
             <button 
               onClick={removeImage} 
-              className="absolute top-1 right-1 bg-black bg-opacity-50 text-white rounded-full p-0 w-5 h-5 flex items-center justify-center text-xs"
+              className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white rounded-full p-1 w-6 h-6 flex items-center justify-center text-sm transition-colors"
               aria-label="Remove image"
             >
                 &times;
             </button>
         </div>
       )}
-      <div className="flex items-end space-x-2">
+      <div className="flex items-end space-x-3 bg-slate-50 dark:bg-slate-800 rounded-3xl p-2">
         <input
           type="file"
           ref={fileInputRef}
@@ -96,7 +96,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSend, disabled }) => {
         <button
           onClick={() => fileInputRef.current?.click()}
           disabled={disabled}
-          className="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-50 self-end mb-1"
+          className="p-3 rounded-2xl text-slate-500 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 disabled:opacity-50 transition-colors"
           aria-label="Attach file"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,7 +110,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSend, disabled }) => {
           onInput={handleInput}
           onKeyDown={handleKeyPress}
           placeholder={imageFile ? "Describe the image..." : "Type a message..."}
-          className="flex-1 px-4 py-2 rounded-2xl bg-slate-100 dark:bg-slate-700 border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white resize-none"
+          className="flex-1 px-4 py-3 bg-transparent border-none focus:outline-none focus:ring-0 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 resize-none"
           rows={1}
           style={{ maxHeight: '120px' }}
           disabled={disabled}
@@ -119,7 +119,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSend, disabled }) => {
         <button
           onClick={handleSend}
           disabled={disabled || (!text.trim() && !imageFile)}
-          className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-400 dark:disabled:bg-blue-800 disabled:cursor-not-allowed transition-colors self-end mb-1"
+          className="p-3 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white disabled:bg-slate-300 dark:disabled:bg-slate-600 disabled:cursor-not-allowed transition-colors shadow-lg hover:shadow-xl disabled:shadow-none"
           aria-label="Send message"
         >
          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">

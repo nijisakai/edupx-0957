@@ -11,7 +11,7 @@ interface LoginScreenProps {
 }
 
 const EduPXLogo = () => (
-    <svg width="80" height="80" viewBox="0 0 100 100" className="mx-auto text-blue-600 dark:text-blue-500">
+    <svg width="60" height="60" viewBox="0 0 100 100" className="mx-auto text-blue-600 dark:text-blue-500">
         <rect width="100" height="100" rx="20" fill="currentColor"/>
         <text x="50%" y="50%" dominantBaseline="central" textAnchor="middle" fontSize="50" fontWeight="bold" fill="white">
             E
@@ -91,20 +91,20 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
   const commonInputClass = "w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors";
 
   return (
-    <div className="relative flex flex-col h-full bg-slate-50 dark:bg-slate-900">
-        <div className="absolute top-4 right-4 z-10">
+    <div className="relative flex flex-col h-full bg-white dark:bg-slate-900 ios-safe-container">
+        <div className="absolute top-4 right-4 z-10 ios-safe-top ios-safe-right">
           <LanguageSwitcher />
         </div>
-        <div className="flex-grow flex flex-col items-center justify-center p-8 text-center">
+        <div className="flex-grow flex flex-col items-center justify-center p-6 text-center">
             <EduPXLogo />
-            <h1 className="text-4xl font-bold mt-4 text-slate-800 dark:text-white">
+            <h1 className="text-2xl font-bold mt-4 text-slate-900 dark:text-white">
               {mode === 'login' ? t('login.title') : t('login.createAccountTitle')}
             </h1>
-            <p className="text-slate-600 dark:text-slate-400 mt-2">
+            <p className="text-slate-600 dark:text-slate-400 mt-2 text-sm">
               {t('login.slogan')}
             </p>
 
-            <form onSubmit={handleSubmit} className="mt-10 w-full max-w-sm">
+            <form onSubmit={handleSubmit} className="mt-6 w-full max-w-xs">
               <div className="mb-4">
                 <label htmlFor="username" className="sr-only">{t('login.usernamePlaceholder')}</label>
                 <input
@@ -113,7 +113,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder={t('login.usernamePlaceholder')}
-                  className={commonInputClass}
+                  className="w-full px-3 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   autoFocus
                   autoComplete="username"
                 />
@@ -126,7 +126,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder={t('login.passwordPlaceholder')}
-                  className={commonInputClass}
+                  className="w-full px-3 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   autoComplete={mode === 'login' ? 'current-password' : 'new-password'}
                 />
               </div>
@@ -154,16 +154,16 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                   </>
               )}
 
-              {error && <p className="text-red-500 text-sm my-4">{error}</p>}
-              {successMessage && <p className="text-green-600 dark:text-green-500 text-sm my-4">{successMessage}</p>}
+              {error && <p className="text-red-500 text-sm my-3 bg-red-50 dark:bg-red-900/20 p-2 rounded-lg">{error}</p>}
+              {successMessage && <p className="text-green-600 dark:text-green-400 text-sm my-3 bg-green-50 dark:bg-green-900/20 p-2 rounded-lg">{successMessage}</p>}
 
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full mt-2 bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 disabled:bg-blue-400 dark:disabled:bg-blue-800 disabled:cursor-not-allowed transition-colors flex items-center justify-center"
+                className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl disabled:bg-blue-400 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center"
               >
                 {isLoading ? (
-                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <svg className="animate-spin -ml-1 mr-3 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
@@ -171,12 +171,12 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
               </button>
             </form>
             <p className="mt-6 text-sm">
-                <button onClick={toggleMode} className="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300">
+                <button onClick={toggleMode} className="font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
                     {mode === 'login' ? t('login.toggleToRegister') : t('login.toggleToLogin')}
                 </button>
             </p>
         </div>
-        <footer className="text-center p-4 text-xs text-slate-500 dark:text-slate-400">
+        <footer className="text-center p-3 text-xs text-slate-500 dark:text-slate-400 ios-safe-bottom">
             {t('login.footer')}
         </footer>
     </div>

@@ -1,0 +1,113 @@
+{
+  "title": "EduPX Documentation",
+  "tableOfContents": "Table of Contents",
+  "overview": {
+    "title": "EduPX Overview: Empowering Policy Making with AI Agents",
+    "content": "In the era of intelligent education, AI has been continuously expanding the depth and breadth of educational governance. UNESCO, as a key advocate for global education and knowledge sharing, has been actively promoting international cooperation, aiming to foster a future of education that is fairer, more inclusive, and more sustainable.\n\nConfronting the core difficulties of imprecise policy document retrieval, cross-policy comparison and evaluation, and challenges in dynamic policy trend forecasting, the Education Policy and Planning AI Agents (EduPX) focuses on assisting educational decision-making, planning, implementation, and the optimization of education governance. It provides policy developers, decision-makers, as well as educational and research institutions and international education organizations with scientific policy support and strategic insights.\n\nLooking ahead, EduPX will further empower educational decision-making, planning, implementation, and the optimization of education governance via AI technology. It also drives fairness and sustainability in global education systems through scientific and efficient approaches."
+  },
+  "applications": {
+    "title": "Applications",
+    "subtitle": "EduPX supports five primary application scenarios:",
+    "description": "EduPX is an GenAI-powered platform designed to enhance the efficiency, precision, and foresight of education policy-making. It provides intelligent support across five core application scenarios, each leveraging large language models and domain-specific agents to assist policy developers and decision-makers.",
+    "list": [
+      {
+        "emoji": "🤖🔍",
+        "title": "1. Precise Policy Retrieval",
+        "description": "EduPX helps users quickly locate relevant education policy documents from a vast, multi-source database using semantic search and intent-aware matching."
+      },
+      {
+        "emoji": "🤖❓",
+        "title": "2. Policy Knowledge Q&A",
+        "description": "Through natural language interaction, EduPX agents provide instant, authoritative answers to complex policy-related queries, grounded in verified document sources."
+      },
+      {
+        "emoji": "🤖🌍",
+        "title": "3. Cross-National Policy Comparison",
+        "description": "EduPX enables structured comparison of policies across countries or regions, highlighting similarities, differences, and contextual insights for informed benchmarking."
+      },
+      {
+        "emoji": "🤖📝",
+        "title": "4. Policy Drafting Assistance",
+        "description": "The system assists in drafting policy documents by generating structure outlines, content suggestions, and phrasing based on best practices and user-defined goals."
+      },
+      {
+        "emoji": "🤖📈",
+        "title": "5. Policy Trend Forecasting",
+        "description": "EduPX leverages temporal and cross-domain data to forecast future policy directions and identify emerging themes, supporting strategic planning and anticipatory governance."
+      }
+    ]
+  },
+  "targetUser": {
+    "title": "Target User",
+    "content": "EduPX provides policy developers, decision-makers, as well as educational and research institutions and international education organizations with scientific policy support and strategic insights."
+  },
+  "keyAdvantages": {
+    "title": "Key Advantages",
+    "content": "EduPX has six key features:",
+    "list": [
+      "Multidimensional Analysis and Scientific Assessment",
+      "Multilingual Adaptation and Support",
+      "Whole-Process Policy Service",
+      "Superior-Quality Policy Data",
+      "Result Transparency and High Credibility",
+      "Personalized Intelligent Feedback"
+    ]
+  },
+  "model": {
+    "title": "Model",
+    "content": "By leveraging multidimensional data from education, economics, technology, and other areas, EduPX employs large language models of differential parameter scales as well as domain-specific AI models, and introduces a multi-agent coordination framework.",
+    "framework": {
+      "title": "Framework",
+      "content": "EduPX's pre-training dataset aggregates hundreds of thousands of educational policy documents, publicly released by various international organizations, encompassing themes such as artificial intelligence, digital education, and lifelong learning. In addition, EduPX integrates multimodal data on global politics, economics, and culture, and maintains deep collaboration with multiple leading global enterprises, thereby establishing a powerful computing infrastructure."
+    }
+  },
+  "tutorial": {
+    "title": "Tutorial: Get Started with EduPX (Step-by-Step Guides)",
+    "subtitle": "This guide is designed to help users master the use of EduPX's five core functions. Each function supports multiple typical application modes, making it suitable for various tasks such as policy analysis, drafting, and evaluation across different scenarios.",
+    "gettingStarted": {
+      "title": "Getting Started",
+      "access": {
+        "title": "Access the EduPX Official Website",
+        "content": "Visit the EduPX platform via: https://edupx.bnu.edu.cn/"
+      },
+      "registration": {
+        "title": "User Registration",
+        "content": "Currently, EduPX is available for internal testing only. Account registration is not publicly open at this stage. Access is limited to users with authorized test accounts."
+      }
+    }
+  },
+  "usagePolicy": {
+    "title": "Usage Policy",
+    "subtitle": "We have recently updated the EduPX usage policy to make it clearer and more specific.",
+    "content": "We encourage all users to use EduPX tools and services safely and responsibly. Therefore, we have established usage guidelines that apply to all EduPX models, agents, and platform services. By following these guidelines, you help ensure that our technology is used to support the scientific development of education policy and promote positive outcomes."
+  },
+  "faqs": {
+    "title": "FAQs",
+    "general": {
+      "title": "General",
+      "items": [
+        {
+          "question": "What should I do if I encounter a runtime error?",
+          "answer": "1. Locate the 🔄 circular arrow symbol (a small loop icon) at the bottom-right corner of the chat content.\n2. Click it and wait for the process to complete.\n3. If the issue persists, try clicking it again—sometimes multiple attempts are needed."
+        },
+        {
+          "question": "Why is my message failing to send?",
+          "answer": "1. Check your internet connection.\n2. Refresh the page (click the browser's reload button or press F5).\n3. If the issue persists, the server may be under maintenance—please try again later."
+        },
+        {
+          "question": "How can I contact support or report an issue?",
+          "answer": "Email support@example.com with screenshots and details."
+        }
+      ]
+    },
+    "technical": {
+      "title": "Technical",
+      "items": [
+        {
+          "question": "The UI looks broken (e.g., misaligned/text glitches). How to fix it?",
+          "answer": "1. Try switching browsers (Chrome/Firefox recommended).\n2. Clear your browser cache (Ctrl+Shift+Del).\n3. Update your browser to the latest version."
+        }
+      ]
+    }
+  }
+}

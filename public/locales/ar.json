@@ -62,5 +62,13 @@
   "docs.tocTitle": "المحتويات",
   "docs.overview.title": "1. نظرة عامة على EduPX",
   "docs.applications.title": "التطبيقات",
-  "docs.faqs.title": "2. الأسئلة الشائعة"
+  "docs.faqs.title": "2. الأسئلة الشائعة",
+  "docs.targetUser.title": "المستخدم المستهدف",
+  "docs.keyAdvantages.title": "المزايا الرئيسية",
+  "docs.model.title": "النموذج",
+  "docs.tutorial.title": "البرنامج التعليمي",
+  "docs.usagePolicy.title": "سياسة الاستخدام",
+  "docs.backToTop": "العودة إلى الأعلى",
+  "docs.loading": "جاري تحميل التوثيق...",
+  "docs.error": "فشل في تحميل التوثيق"
 }

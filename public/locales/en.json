@@ -68,5 +68,13 @@
   "docs.tocTitle": "Contents",
   "docs.overview.title": "1. EduPX Overview",
   "docs.applications.title": "Applications",
-  "docs.faqs.title": "2. FAQs"
+  "docs.faqs.title": "2. FAQs",
+  "docs.targetUser.title": "Target User",
+  "docs.keyAdvantages.title": "Key Advantages",
+  "docs.model.title": "Model",
+  "docs.tutorial.title": "Tutorial",
+  "docs.usagePolicy.title": "Usage Policy",
+  "docs.backToTop": "Back to Top",
+  "docs.loading": "Loading documentation...",
+  "docs.error": "Failed to load documentation"
 }

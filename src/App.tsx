@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LoginScreen } from './components/LoginScreen';
 import { MainScreen } from './components/MainScreen';
 import { WebViewScreen } from './components/WebViewScreen';
@@ -10,6 +10,30 @@ const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [view, setView] = useState<View>('login');
   const [selectedApp, setSelectedApp] = useState<AppInfo | null>(null);
+
+  // Add iOS safe area support
+  useEffect(() => {
+    // Detect if we're in iOS and add appropriate CSS variables
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                 (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    
+    if (isIOS) {
+      // Add CSS variables for safe areas
+      document.documentElement.style.setProperty('--safe-area-inset-top', 'env(safe-area-inset-top)');
+      document.documentElement.style.setProperty('--safe-area-inset-bottom', 'env(safe-area-inset-bottom)');
+      document.documentElement.style.setProperty('--safe-area-inset-left', 'env(safe-area-inset-left)');
+      document.documentElement.style.setProperty('--safe-area-inset-right', 'env(safe-area-inset-right)');
+      
+      // Add iOS-specific class
+      document.body.classList.add('ios-device');
+    }
+    
+    // Add viewport meta tag for proper mobile rendering
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport) {
+      viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no');
+    }
+  }, []);
 
   const handleLogin = (loggedInUser: User) => {
     setUser(loggedInUser);
@@ -68,7 +92,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen max-w-lg mx-auto bg-white dark:bg-slate-900 shadow-2xl flex flex-col antialiased">
+    <div className="w-full h-screen max-w-lg mx-auto bg-white dark:bg-slate-900 shadow-2xl flex flex-col antialiased ios-safe-container">
       {renderContent()}
     </div>
   );

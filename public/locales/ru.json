@@ -62,5 +62,13 @@
   "docs.tocTitle": "Содержание",
   "docs.overview.title": "1. Обзор EduPX",
   "docs.applications.title": "Приложения",
-  "docs.faqs.title": "2. Часто задаваемые вопросы"
+  "docs.faqs.title": "2. Часто задаваемые вопросы",
+  "docs.targetUser.title": "Целевой пользователь",
+  "docs.keyAdvantages.title": "Ключевые преимущества",
+  "docs.model.title": "Модель",
+  "docs.tutorial.title": "Учебник",
+  "docs.usagePolicy.title": "Политика использования",
+  "docs.backToTop": "Вернуться наверх",
+  "docs.loading": "Загрузка документации...",
+  "docs.error": "Ошибка загрузки документации"
 }

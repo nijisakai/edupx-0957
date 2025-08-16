@@ -1,0 +1,113 @@
+{
+  "title": "Documentation EduPX",
+  "tableOfContents": "Table des Matières",
+  "overview": {
+    "title": "Aperçu d'EduPX : Autonomiser l'Élaboration de Politiques avec des Agents IA",
+    "content": "À l'ère de l'éducation intelligente, l'IA a continuellement élargi la profondeur et l'étendue de la gouvernance éducative. L'UNESCO, en tant que défenseur clé de l'éducation mondiale et du partage des connaissances, a activement promu la coopération internationale, visant à favoriser un avenir éducatif plus juste, plus inclusif et plus durable.\n\nConfrontant les difficultés centrales de la récupération imprécise de documents de politique, de la comparaison et évaluation inter-politiques, et des défis dans la prévision dynamique des tendances politiques, les Agents IA de Politique et Planification Éducative (EduPX) se concentrent sur l'assistance à la prise de décision éducative, la planification, la mise en œuvre et l'optimisation de la gouvernance éducative. Il fournit aux développeurs de politiques, aux décideurs, ainsi qu'aux institutions éducatives et de recherche et aux organisations éducatives internationales un soutien politique scientifique et des insights stratégiques.\n\nRegardant vers l'avenir, EduPX autonomisera davantage la prise de décision éducative, la planification, la mise en œuvre et l'optimisation de la gouvernance éducative via la technologie IA. Il favorise également l'équité et la durabilité dans les systèmes éducatifs mondiaux par des approches scientifiques et efficaces."
+  },
+  "applications": {
+    "title": "Applications",
+    "subtitle": "EduPX prend en charge cinq scénarios d'application principaux :",
+    "description": "EduPX est une plateforme alimentée par l'IA générative conçue pour améliorer l'efficacité, la précision et la prévoyance de l'élaboration de politiques éducatives. Elle fournit un soutien intelligent à travers cinq scénarios d'application centraux, chacun exploitant de grands modèles de langage et des agents spécifiques au domaine pour assister les développeurs de politiques et les décideurs.",
+    "list": [
+      {
+        "emoji": "🤖🔍",
+        "title": "1. Récupération Précise de Politiques",
+        "description": "EduPX aide les utilisateurs à localiser rapidement des documents de politique éducative pertinents à partir d'une vaste base de données multi-sources en utilisant la recherche sémantique et la correspondance consciente de l'intention."
+      },
+      {
+        "emoji": "🤖❓",
+        "title": "2. Questions-Réponses sur les Connaissances Politiques",
+        "description": "Grâce à l'interaction en langage naturel, les agents EduPX fournissent des réponses instantanées et faisant autorité aux requêtes complexes liées aux politiques, basées sur des sources de documents vérifiées."
+      },
+      {
+        "emoji": "🤖🌍",
+        "title": "3. Comparaison de Politiques Trans-nationales",
+        "description": "EduPX permet la comparaison structurée de politiques entre pays ou régions, mettant en évidence les similitudes, différences et insights contextuels pour un benchmarking éclairé."
+      },
+      {
+        "emoji": "🤖📝",
+        "title": "4. Assistance à la Rédaction de Politiques",
+        "description": "Le système assiste dans la rédaction de documents de politique en générant des contours structuraux, des suggestions de contenu et une formulation basée sur les meilleures pratiques et les objectifs définis par l'utilisateur."
+      },
+      {
+        "emoji": "🤖📈",
+        "title": "5. Prévision des Tendances Politiques",
+        "description": "EduPX exploite les données temporelles et trans-domaines pour prévoir les directions politiques futures et identifier les thèmes émergents, soutenant la planification stratégique et la gouvernance anticipatoire."
+      }
+    ]
+  },
+  "targetUser": {
+    "title": "Utilisateur Cible",
+    "content": "EduPX fournit aux développeurs de politiques, aux décideurs, ainsi qu'aux institutions éducatives et de recherche et aux organisations éducatives internationales un soutien politique scientifique et des insights stratégiques."
+  },
+  "keyAdvantages": {
+    "title": "Avantages Clés",
+    "content": "EduPX a six caractéristiques clés :",
+    "list": [
+      "Analyse Multidimensionnelle et Évaluation Scientifique",
+      "Adaptation et Support Multilingue",
+      "Service de Politique de Processus Complet",
+      "Données de Politique de Qualité Supérieure",
+      "Transparence des Résultats et Haute Crédibilité",
+      "Retour Intelligent Personnalisé"
+    ]
+  },
+  "model": {
+    "title": "Modèle",
+    "content": "En exploitant des données multidimensionnelles de l'éducation, de l'économie, de la technologie et d'autres domaines, EduPX emploie de grands modèles de langage d'échelles de paramètres différentiels ainsi que des modèles IA spécifiques au domaine, et introduit un cadre de coordination multi-agent.",
+    "framework": {
+      "title": "Cadre",
+      "content": "Le jeu de données de pré-entraînement d'EduPX agrège des centaines de milliers de documents de politique éducative, publiquement libérés par diverses organisations internationales, englobant des thèmes tels que l'intelligence artificielle, l'éducation numérique et l'apprentissage tout au long de la vie. De plus, EduPX intègre des données multimodales sur la politique, l'économie et la culture mondiales, et maintient une collaboration profonde avec plusieurs entreprises mondiales de premier plan, établissant ainsi une infrastructure informatique puissante."
+    }
+  },
+  "tutorial": {
+    "title": "Tutoriel : Commencer avec EduPX (Guides Étape par Étape)",
+    "subtitle": "Ce guide est conçu pour aider les utilisateurs à maîtriser l'utilisation des cinq fonctions centrales d'EduPX. Chaque fonction prend en charge plusieurs modes d'application typiques, la rendant adaptée à diverses tâches telles que l'analyse, la rédaction et l'évaluation de politiques dans différents scénarios.",
+    "gettingStarted": {
+      "title": "Commencer",
+      "access": {
+        "title": "Accéder au Site Web Officiel EduPX",
+        "content": "Visitez la plateforme EduPX via : https://edupx.bnu.edu.cn/"
+      },
+      "registration": {
+        "title": "Inscription Utilisateur",
+        "content": "Actuellement, EduPX est disponible pour les tests internes uniquement. L'inscription de compte n'est pas ouverte publiquement à ce stade. L'accès est limité aux utilisateurs avec des comptes de test autorisés."
+      }
+    }
+  },
+  "usagePolicy": {
+    "title": "Politique d'Utilisation",
+    "subtitle": "Nous avons récemment mis à jour la politique d'utilisation d'EduPX pour la rendre plus claire et plus spécifique.",
+    "content": "Nous encourageons tous les utilisateurs à utiliser les outils et services EduPX de manière sûre et responsable. Par conséquent, nous avons établi des directives d'utilisation qui s'appliquent à tous les modèles, agents et services de plateforme EduPX. En suivant ces directives, vous aidez à assurer que notre technologie est utilisée pour soutenir le développement scientifique de la politique éducative et promouvoir des résultats positifs."
+  },
+  "faqs": {
+    "title": "FAQ",
+    "general": {
+      "title": "Général",
+      "items": [
+        {
+          "question": "Que dois-je faire si je rencontre une erreur d'exécution ?",
+          "answer": "1. Localisez le symbole de flèche circulaire 🔄 (une petite icône de boucle) dans le coin inférieur droit du contenu de chat.\n2. Cliquez dessus et attendez que le processus se termine.\n3. Si le problème persiste, essayez de cliquer dessus à nouveau—parfois plusieurs tentatives sont nécessaires."
+        },
+        {
+          "question": "Pourquoi mon message n'arrive-t-il pas à s'envoyer ?",
+          "answer": "1. Vérifiez votre connexion internet.\n2. Actualisez la page (cliquez sur le bouton de rechargement du navigateur ou appuyez sur F5).\n3. Si le problème persiste, le serveur peut être en maintenance—veuillez réessayer plus tard."
+        },
+        {
+          "question": "Comment puis-je contacter le support ou signaler un problème ?",
+          "answer": "Envoyez un email à support@example.com avec des captures d'écran et des détails."
+        }
+      ]
+    },
+    "technical": {
+      "title": "Technique",
+      "items": [
+        {
+          "question": "L'interface semble cassée (ex., désalignée/problèmes de texte). Comment la réparer ?",
+          "answer": "1. Essayez de changer de navigateur (Chrome/Firefox recommandés).\n2. Videz le cache de votre navigateur (Ctrl+Shift+Del).\n3. Mettez à jour votre navigateur vers la dernière version."
+        }
+      ]
+    }
+  }
+}

@@ -804,6 +804,87 @@ Include padding and border in element's total size box-sizing model.
   text-wrap: pretty;
 }
 
+/* Text utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* iOS Safe Area Support */
+.ios-safe-container {
+  padding-top: var(--safe-area-inset-top, 0px);
+  padding-right: var(--safe-area-inset-right, 0px);
+  padding-bottom: var(--safe-area-inset-bottom, 0px);
+  padding-left: var(--safe-area-inset-left, 0px);
+}
+
+.ios-safe-top {
+  padding-top: var(--safe-area-inset-top, 0px);
+}
+
+.ios-safe-bottom {
+  padding-bottom: calc(var(--safe-area-inset-bottom, 0px) * 0.3);
+}
+
+.ios-safe-left {
+  padding-left: var(--safe-area-inset-left, 0px);
+}
+
+.ios-safe-right {
+  padding-right: var(--safe-area-inset-right, 0px);
+}
+
+/* iOS Full Screen Layout */
+html.ios-device {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+html.ios-device body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  padding: 0;
+  margin: 0;
+}
+
+/* Status Bar and Navigation Bar Height */
+.ios-status-bar-spacing {
+  height: var(--safe-area-inset-top, 20px);
+}
+
+.ios-home-indicator-spacing {
+  height: var(--safe-area-inset-bottom, 0px);
+}
+
+/* iOS Notch and Dynamic Island Support */
+@supports (padding: max(0px)) {
+  .ios-safe-container {
+    padding-top: max(var(--safe-area-inset-top, 0px), 20px);
+    padding-right: max(var(--safe-area-inset-right, 0px), 16px);
+    padding-bottom: max(var(--safe-area-inset-bottom, 0px), 16px);
+    padding-left: max(var(--safe-area-inset-left, 0px), 16px);
+  }
+}
+
+/* iOS Landscape Mode Adjustments */
+@media screen and (orientation: landscape) {
+  .ios-safe-container {
+    padding-left: var(--safe-area-inset-left, 0px);
+    padding-right: var(--safe-area-inset-right, 0px);
+  }
+}
+
 .prose-slate .prose-p {
   color: #334155;
 }

@@ -53,19 +53,19 @@ export const MainScreen: React.FC<MainScreenProps> = ({ user, onSelectApp, onLog
     }
 
     return (
-        <div className="flex flex-col h-full bg-slate-100 dark:bg-slate-900">
-            <header className="p-4 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shrink-0">
+        <div className="flex flex-col h-full bg-white dark:bg-slate-900">
+            <header className="p-4 shrink-0 ios-safe-top">
                 <div className="flex justify-between items-center">
                     <div>
-                        <h1 className="text-xl font-bold text-slate-800 dark:text-white">{t('portal.greeting', { name: user.name })}</h1>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">{getHeaderTitle()}</p>
+                        <h1 className="text-xl font-bold text-slate-900 dark:text-white">{t('portal.greeting', { name: user.name })}</h1>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">{getHeaderTitle()}</p>
                     </div>
                     <div className="flex items-center space-x-2">
                          <LanguageSwitcher />
                          {activeTab === 'docs' && (
                             <button 
                                 onClick={() => setIsTocOpen(true)} 
-                                className="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"
+                                className="p-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
                                 aria-label={t('docs.tocTitle')}
                             >
                                 <MenuIcon className="h-6 w-6" />
@@ -73,7 +73,7 @@ export const MainScreen: React.FC<MainScreenProps> = ({ user, onSelectApp, onLog
                          )}
                          <button
                             onClick={onLogout}
-                            className="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"
+                            className="p-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
                             aria-label={t('portal.logoutButton')}
                           >
                             <LogoutIcon className="h-6 w-6" />
@@ -82,14 +82,14 @@ export const MainScreen: React.FC<MainScreenProps> = ({ user, onSelectApp, onLog
                 </div>
             </header>
 
-            <main className="flex-1 overflow-y-auto custom-scrollbar">
+            <main className="flex-1 overflow-y-auto custom-scrollbar ios-safe-left ios-safe-right">
                 {renderContent()}
             </main>
             
-            <footer className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shrink-0">
-                <nav className="flex justify-around h-16">
+            <footer className="shrink-0 ios-safe-bottom border-t border-slate-100 dark:border-slate-800">
+                <nav className="flex justify-around h-16 bg-white dark:bg-slate-900">
                     {tabs.map(tab => (
-                        <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex flex-col items-center justify-center w-full pt-2 pb-1 transition-colors duration-200 ${activeTab === tab.id ? 'text-blue-600 dark:text-blue-400' : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700'}`}>
+                        <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex flex-col items-center justify-center w-full pt-2 pb-1 transition-colors duration-200 ${activeTab === tab.id ? 'text-blue-600 dark:text-blue-400' : 'text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800'}`}>
                             <tab.icon className="h-6 w-6" />
                             <span className="text-xs mt-1">{t(tab.labelKey)}</span>
                         </button>
